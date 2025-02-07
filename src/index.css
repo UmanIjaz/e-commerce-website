@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  color: #28282b;
+  background-color: #fcf8f5;
+}
+
+.root {
+  width: 100%;
+}
+
+#homePage {
+  margin: 0 auto;
+}
+
+@media (max-width: 830px) {
+  #CartBox {
+    max-width: 290px;
+  }
+}
+@media (max-width: 590px) {
+  #homePage {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #CartBox {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 754px) {
+  #productCatalogList {
+    justify-content: center;
+    align-items: center;
+  }
+}
